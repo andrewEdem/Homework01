@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.calvin.akg8.homework01.CalculatorActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value1TextView"
+        android:id="@+id/value1TextView"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value2TextView"
+        android:id="@+id/value2TextView"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/value1EditText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/value1EditText"
+        android:layout_alignTop="@+id/value1TextView"
+        android:layout_toEndOf="@+id/operatorTextView"
+        android:text="@string/value1EditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/value2EditText"
+        android:text="@string/value2EditText"
+        android:layout_alignTop="@+id/value2TextView"
+        android:layout_toEndOf="@+id/operatorTextView" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/operatorSpinner"
+        android:entries="@array/operatorSpinner"
+        android:layout_alignTop="@+id/operatorTextView"
+        android:layout_toEndOf="@+id/operatorTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operatorTextView"
+        android:id="@+id/operatorTextView"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/value2EditText"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculateButton"
+        android:id="@+id/calculateButton"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/operatorSpinner"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/calculateButton"
+        android:layout_toEndOf="@+id/calculateButton"
+        android:layout_marginStart="21dp"
+        android:id="@+id/resultTextView"
+        tools:text="@string/resultTextView"
+        android:textSize="20sp" />
+
+</RelativeLayout>
