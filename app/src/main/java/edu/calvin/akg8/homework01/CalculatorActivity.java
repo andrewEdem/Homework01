@@ -1,5 +1,14 @@
 package edu.calvin.akg8.homework01;
 
+/*
+* Homework01
+* CS-262
+* This activity creates a simple calculator app
+*
+* @author: Andrew Gbeddy
+* @version: fall 2016
+*/
+
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
